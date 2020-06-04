@@ -1,5 +1,7 @@
 #!/bin/bash
 
+sleep 999999
+
 Rscript -e 'print(Sys.getenv("R_PROFILE"))' >> /tmp/testit.log
 Rscript -e 'print(dir("/tmp"))' >> /tmp/testit.log
 Rscript -e 'print(dir("/home/ubuntu"))' >> /tmp/testit.log
